@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Benoît de Raucourt</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>Hello, I am Benoît Poncelin de Raucourt</h1>
+        <img class="photo-profil" src="img/Photo de profil Benoît 2026.jpg" alt="Photo de profil de Benoit" />
+        <h2>Engineering student at ENSAM (Arts et Métiers)</h2>
+        
+        <nav>
+            <a href="#projects">Projects</a>
+            <a href="#inspirations">Inspirations</a>
+            <a href="#Trips">Places I have been</a>
+            <a href="#parcours">Education</a>
+            <a href="#contact">Contact</a>
+            
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about me">
+            <h2>About me</h2>
+            <p>I’m a first-year engineering student at Arts et Métiers ParisTech, with a strong interest in propulsion systems, particularly magnetohydrodynamic propulsion, and research-oriented projects. I enjoy developing simulations and prototypes, learning through experimentation, and transforming ideas into clear, reproducible work.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <a href="mhd_propeller.html">
+                        <h3>Magnetohydrodynamic accelerator</h3>
+                        <p>Project during preparatory class for Engineering Schools</p>
+                    </a>
+                </div>
+                <div 
+                class="project-card"> <a class="project-link" href="Samarts.html">
+                    <h3>SAMARTS</h3>
+                    <p>Design of a bio inspired wing at 50:1 scale</p>
+                
+                </a>
+            </div>
+
+                <div class="project-card">
+                    <a class="project-link" href="Fire_forest.html">
+                        <h3>Fire Forest Simulation</h3>
+                        <p>Types of fire forest simualtion (2D, 3D)</p>
+                    </a>
+                </div>
+
+                
+            </div>
+            
+            
+        </section>
+
+        <section id="activities">
+            
+            <div class="activities-strip">
+                <a href="activities.html">
+                    <h2>Activities</h2>
+                </a>
+                <img src="img/Scout europe logo.jpg" alt="Scouting" />
+                <img src="img/420 temps calme.jpg" alt="Sailing" />
+            </div>
+        </section>
+
+        <section id="parcours">
+            <h2>Education</h2>
+
+            <ol class="metro">
+                <li class="stop">
+                    <img class= "stop-logo" src="img/Arts_et_métiers_Logo.png" alt="Ensam logo">
+                    <h3>Arts et Métiers ParisTech (ENSAM)</h3>
+                    <p class="meta">MS Engineering degree</p>
+                    <p>Mechanical engineering, Electrical engineering, Projects, Modelizing, Apply computer science.</p>
+                    <img class="stop-photo" src="img/ENSAM.jpg" alt="Arts et Métiers" />
+                </li>
+
+                <li class="stop">
+                    <img class= "stop-logo" src="img/Lesage logo.png" alt="Lesage logo">
+                    <h3>PTSI / PT — Lesage (Vannes)</h3>
+                    <p class="meta">Preparatory Class for Engineering Schools</p>
+                    <p>Rigor, Methods, Problem solving.</p>
+                    <img class="stop-photo" src="img/Lesage.jpg" alt="Lesage" />
+                </li>
+
+                
+
+                <li class="stop">
+                    <img class= "stop-logo" src="img/logo SJH.png" alt="SJH logo">
+                    <h3>Saint Jean Hulst (Versailles)</h3>
+                    <p class="meta">High School</p>
+                    <p>Solid fundations, Taste for sciences et mathematics.</p>
+                    <img class="stop-photo" src="img/SJH.jpg" alt="Saint Jean Hulst" />
+                </li>
+            </ol>
+        </section>
+
+
+        <section id="inspirations">
+            
+            <div class="inspirations">
+                <div class="inspiration-card">
+                    
+                    <a class="inspiration-link" href="Inspirations.html">
+                        <h2>Inspirations</h2>
+                        <p>Movies, books, YT channels,...</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="Trips">
+            <h2>Places I have been</h2>
+            
+            <div id="map"></div>
+        </section>
+
+        <section id="contact">
+            <h2 class="contact-title">Contact</h2>
+            <div class="contact-actions">
+            <div class="socials">
+            
+            <a class="social" target="_blank" rel="noreferrer"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=benoit.de.raucourt@gmail.com"
+            aria-label="Ouvrir Gmail">
+
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+            </a>
+
+
+            <a class="social" href="https://www.instagram.com/benoit_2r/" target="_blank" rel="noreferrer" aria-label="Instagram">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm9 2h-9A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.25-2.1a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3z"/>
+                </svg>
+  
+            </a>
+
+            <a class="social" href="https://www.facebook.com/benoit.deraucourt/" target="_blank" rel="noreferrer" aria-label="Facebook">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M13.5 22v-8h2.7l.4-3H13.5V9.1c0-.9.3-1.6 1.6-1.6H16.7V4.8c-.3 0-1.4-.1-2.8-.1-2.8 0-4.7 1.7-4.7 4.9V11H6.6v3h2.6v8h4.3z"/>
+                </svg>
+              
+            </a>
+
+            <a class="social" href="https://www.linkedin.com/in/benoit-de-raucourt25/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6.5 6.8A2.3 2.3 0 1 1 6.5 2.2a2.3 2.3 0 0 1 0 4.6zM4.4 22h4.2V8.5H4.4V22zM13.1 8.5H9.1V22h4.2v-7.1c0-1.9.4-3.7 2.8-3.7 2.4 0 2.4 2.2 2.4 3.8V22H23V14.1c0-3.9-.8-6.1-4.8-6.1-1.9 0-3.1 1-3.6 1.9h-.1V8.5z"/>
+                </svg>
+            </a>
+            <button class="button" type="button" id="copy-email">Or copy my email</button>
+            <p id="copy-status" aria-live="polite"></p>
+        </div>
+        </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 — Benoît de Raucourt</p>
+    </footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
